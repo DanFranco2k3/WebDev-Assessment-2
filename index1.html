@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>WebDev</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2><img src="images/noun-jeepney-61802.png" class="logo" width="" height="80"> The Jeepney Journey </h2>
+            <ul>
+                <li><a href="#container-lower">Home</a></li>
+                <li><a href="#middle">Cultural Art</a></li>
+                <li><a href="#container-lowest">About Us</a></li>
+                <li><a href="#footer">Contact us</a></li>
+                <button class="btn">Sign up</button>
+            </ul>
+        </div> 
+
+
+
+
+        <div class="container-lower">
+            <div class="main">
+                <h1 class="title">Explore the Art Culture of The Philippine Islands.</h1>
+                <button class="bbtn">Click here</button>
+            </div>
+        </div>
+
+
+
+            <div class="middle">
+                <div class="container-middle reveal">
+                    <div class="left">
+                        <h2> One of the best cultural art of the Philippines is</h2>
+                        <img src="http://www8.gmanews.tv/webpics/v3/2011/12/Bayanihan%20by%20Fernando%20Amorsolo_picnik.jpg" class="image" width="900" height="500">
+                        <h1>Bayanihan (1959)</h1>
+                    </div>
+                    <div class="container-mid">
+                        <div class="right">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Fernando_Amorsolo.png" class="artist" width="200" height="200">
+                            <h2> Fernando Amorsolo</h2>
+                            <p>Bayanihan (1959), the process of a village moving a house in unison, is both the title and subject matter of Amorsolo's painting, and is a typical example of the "conservative realist" strain of painting that dominated the Philippine art scene in the period directly following independence from the United States in 1946. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+        <div class="container-lowest">
+            <h1 class="lowest_title reveal">About us</h1>
+            <div class="content reveal">
+                <div class="topic">
+                    <h1>What is Jeepney Journey?</h1>
+                    <p>The Jeepney Journey is here for promoting cultural arts and crafts of the Philippine Islands, with a focus on the cultural art of the Infamous artists of the islands. Emphasizing the artists that work their way to the top, giving Philippines the recognition it needs and bring pride to the motherland.  </p>
+                </div>
+                <div class="topic1">
+                    <h1>Cultural Arts</h1>
+                    <p>Philippines is consists of 7,641 islands where every islands is full of creativity and smart minds full of imagination. Jeepney Journey is here to assist you on a one of a kind journey to the islands presenting their arts, cultures, and traditions.</p>
+                </div>
+                <div class="topic2">
+                    <h1>Cultural Activities</h1>
+                    <p>There's a lot of cultural activities to do in the islands such as Traditional Tattoo, Hilot (A kind of traditonal healing),Pottery , and Habi (Traditional weaving). These activities helped the locals to gain income and enhance their business in order to attract more adventure seekers to a journey they will never forget.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-title reveal">
+                <h1>Contact us</h1>
+                <h3>Get in touch</h3>
+                <p>Want to be featured? We'd love to hear from you!</p>
+            </div>
+            <div class="footer-contents">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="contact-form">
+                            <form class="form">
+                                <input type="text" class="input" placeholder="Name">
+                                <input type="text" class="input" placeholder="Email">
+                                <input type="text" class="input" placeholder="Contact No.">
+                                <textarea type="text" class="input" placeholder="Message"></textarea>
+                                <button class="btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="contact_info">
+            <div class="contact-info-container">
+                <div class="contact-footer">
+                    <div class="social-media">
+                        <ul>
+                            <li><img src="images/facebook.png" class="logo" width="50" height="50">
+                            <li><img src="images/twitter.png" class="logo" width="50" height="50">
+                            <li><img src="images/instagram.png" class="logo" width="50" height="50">
+                            </ul>
+                        <h4 class="copyright"> &copy; 2024 The Jeepney Journey, All Rights Reserved</h4>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    var windowheight = window.innerHeight;
+    var revealpoint = 150;
+
+    for (var i = 0; i < reveals.length; i++) {
+        var revealtop = reveals[i].getBoundingClientRect().top;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+    </script>
+</body>
+</html>
